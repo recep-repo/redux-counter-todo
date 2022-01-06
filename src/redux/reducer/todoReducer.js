@@ -1,7 +1,9 @@
-import { TOGGLE_TODO } from '../types/todoTypes.js';
-import { CLEAR_TODO_LIST } from '../types/todoTypes.js';
-import { DELETE_TODO } from '../types/todoTypes.js';
-import { ADD_TODO } from '../types/todoTypes.js';
+import {
+    ADD_TODO,
+    CLEAR_TODO_LIST,
+    TOGGLE_TODO,
+    DELETE_TODO
+} from '../types/todoTypes'
 
 const initialState = {
     counter: 0,
@@ -29,9 +31,7 @@ const todoReducer = (state = initialState, action ) => {
                 list: state.list.filter((item) => item.id !== action.payload)
             }
         case CLEAR_TODO_LIST:
-            return{
-                initialState
-            }
+            return initialState
         case TOGGLE_TODO:
             return{
                 ...state,
