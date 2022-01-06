@@ -1,0 +1,17 @@
+{
+  "files.exclude": {
+    "*.git": true,
+    "*.git.*": true,
+    "*.gitignore": true,
+    "*.gitignore.*": true,
+    "*.vscode": true,
+    "*.vscode.*": true,
+    "*package": true,
+    "*package.*": true,
+    "*public": true,
+    "*public.*": true,
+    "*README": true,
+    "*README.*": true,
+    "*src.*": true
+  }
+}
